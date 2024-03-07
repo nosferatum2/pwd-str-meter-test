@@ -1,0 +1,18 @@
+.pwd-strength-bar-container {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    vertical-align: 2px;
+}
+
+.point {
+    background: #DDD;
+    display: inline-block;
+    height: 5px;
+    margin-right: 1px;
+    min-width: 55px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

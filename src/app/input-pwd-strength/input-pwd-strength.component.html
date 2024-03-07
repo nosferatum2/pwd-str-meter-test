@@ -1,1 +1,17 @@
-<p>input-pwd-strength works!</p>
+<form class="example-form">
+    <mat-form-field class="example-full-width" hintLabel>
+        <mat-label>Password</mat-label>
+        <input
+            type="password"
+            matInput
+            [formControl]="passwordFormControl"
+            [required]="passwordFormControl.hasValidator(Validators.required)"
+        />
+        <mat-hint>
+            <app-pwd-strength-bar [passwordFormControl]="passwordFormControl"/>
+        </mat-hint>
+    </mat-form-field>
+</form>
+
+<!--TODO: remove after tests-->
+<div style="width: 100%">Your password: {{ passwordFormControl.valueChanges | async }}</div>

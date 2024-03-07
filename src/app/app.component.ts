@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {InputPwdStrengthComponent} from "./input-pwd-strength/input-pwd-strength.component";
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { InputPwdStrengthComponent } from './input-pwd-strength/input-pwd-strength.component';
 
 @Component({
   selector: 'app-root',
